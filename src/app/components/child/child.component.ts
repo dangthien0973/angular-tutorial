@@ -8,7 +8,7 @@ import { Component ,EventEmitter,Input , OnChanges , OnInit, Output, SimpleChang
 export class ChildComponent  implements  OnInit  {
   @Input() name ='';
   @Output() voted = new EventEmitter<boolean>();
-didVote = false;
+  didVote = false;
   
  ngOnInit(): void {
    console.log('ngOnnit from child component')
